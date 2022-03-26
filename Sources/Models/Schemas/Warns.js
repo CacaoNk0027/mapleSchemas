@@ -3,6 +3,6 @@ const warnSchema = new mongoose.Schema({
     guildID: String,
     warns: []
 })
-const Warns = mongoose.model('warn', warnSchema)
+const Warns = mongoose.model('guildWarn', warnSchema)
 
 module.exports = Warns;
