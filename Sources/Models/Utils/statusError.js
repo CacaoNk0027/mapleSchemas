@@ -15,7 +15,7 @@ module.exports = (type, message) => {
             let add = [' ^^', ' uwu', ' c;', " :3"]
             msg = `<a:Disc_check_mark:888250521893363752> | ${message}${random(add)}`;
             break;
-        case "warning":
+        case "warn":
             let ads = ['... ', ' >~<"', ' >~<']
             msg = `<:mtWarn:916316659105538068> | ${message}${random(ads)}`;
             break;
@@ -24,12 +24,12 @@ module.exports = (type, message) => {
             let emg_rp = ['<:mkMaple_peek:836369972313718795>', "<:mkMaple_shrug:836375140232724510>"]
             msg = `${random(emg_rp)} | ${message}${random(ars)}`
             break;
-        case "rpMe":
+        case "rolplayMe":
             let arst = [' ,\':^', " u.u"]
             let emg_rpm = ['<:mkMaple_peek:836369972313718795>', "<:mkMaple_shrug:836375140232724510>"]
             msg = `${random(emg_rpm)} | ${message}${random(arst)}`
             break;
-        case "rpDanger":
+        case "rolplayDanger":
             let arsd = [' ...', " :c", " T-T"]
             let emg_rps = ['<:mkMaple_wasted:836376828222111794>']
             msg = `${random(emg_rps)} | ${message}${random(arsd)}`

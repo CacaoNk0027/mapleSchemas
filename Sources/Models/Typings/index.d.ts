@@ -1,7 +1,7 @@
 import { Model } from "mongoose";
 import {Message, ActivityType, Client, Guild, GuildMember } from "discord.js"
 
-export let schemas : object = {
+export let schemas = {
     Blacklist: Model,
     Farewell: Model,
     Mute: Model,
@@ -33,6 +33,7 @@ export let menus = {
     config: function (prefix: string): string {},
     action: function (prefix: string): string {},
     reaction: function (prefix: string): string {},
+    music: function (prefix: string): string {},
     nsfw: function (prefix: string): string {},
     rpNsfw: function (prefix: string): string {},
     stats: function (obj: myJson): string {}
