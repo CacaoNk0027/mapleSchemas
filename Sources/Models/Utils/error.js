@@ -3,7 +3,7 @@
  * @param {string} error string con el error soltado
  * @returns {Promise<import('discord.js').Message>} retorna el mensaje enviado en forma de promesa
  */
-module.exports = (message, error) => {
+module.exports = async (message, error) => {
     if(!message || message == null) throw new Error("debes de poner un objeto message");
     if(!error || typeof(error) !== "string" || error == null) throw new Error("el parametro error es requerido")
     return await message.channel.send({
