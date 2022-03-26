@@ -48,7 +48,7 @@ module.exports = {
      * @param {discord.Guild} guild 
      * @param {discord.GuildMember} member
      */
-    comunidad: function (client, guild, member) {
+    comunidad: function (guild, member) {
         let rules, escenarios, anuncios, moderador, hilos;
         rules = guild.rulesChannel == null ? "Sin Sanal de Reglas": `<#${guild.rulesChannelId}>\n-ID: ${guild.rulesChannelId}`
         anuncios = guild.channels.cache.filter(ch => ch.type == "GUILD_NEWS").size
