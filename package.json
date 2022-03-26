@@ -1,6 +1,6 @@
 {
   "name": "maplebot_models",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "este npm es solo para reducir la memoria ram y cpu que gasta maple bot",
   "main": "Sources/main.js",
   "typings": "Sources/Models/Typings/index.d.ts",
