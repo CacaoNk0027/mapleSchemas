@@ -3,6 +3,7 @@
   "version": "1.0.2",
   "description": "este npm es solo para reducir la memoria ram y cpu que gasta maple bot",
   "main": "Sources/main.js",
+  "typings": "Sources/Models/Typings/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
