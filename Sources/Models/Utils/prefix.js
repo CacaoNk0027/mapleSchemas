@@ -3,7 +3,7 @@
  * @param {import('discord.js').Guild} guild servidor del que vamos a obtener prefix
  */
 module.exports = async (client, guild) => {
-    let SetPrefix = require('../Schemas/Prefix.js')
+    let SetPrefix = require('../Schemas/SetPrefix.js')
     if(!client) throw new Error('debes poner el cliente de discord')
     if(!guild) throw new Error('debes poner un servidor!')
     try {
