@@ -18,21 +18,21 @@ module.exports = {
         statusError: require('./Utils/statusError.js')
     },
     menus: {
-        guilds: require('./menus/guilds'),
-		users: require('./menus/users'),
+        guilds: require('./Menus/guilds'),
+		users: require('./Menus/users'),
         /** menus de ayuda (Maple Bot) */
-        info: require('./menus/info'),
-		misc: require('./menus/misc'),
-		divs: require('./menus/divs'),
-		mod: require('./menus/mod'),
-		anime: require('./menus/anime'),
-		anim: require('./menus/anima'),
-		config: require('./menus/config'),
-		action: require('./menus/action'),
-		reaction: require('./menus/reaction'),
-		nsfw: require('./menus/nsfw'),
-		rpNsfw: require('./menus/rpNsfw'),
-		stats: require('./menus/stats'),
-		music: require('./menus/music')
+        info: require('./Menus/info'),
+		misc: require('./Menus/misc'),
+		divs: require('./Menus/divs'),
+		mod: require('./Menus/mod'),
+		anime: require('./Menus/anime'),
+		anim: require('./Menus/anima'),
+		config: require('./Menus/config'),
+		action: require('./Menus/action'),
+		reaction: require('./Menus/reaction'),
+		nsfw: require('./Menus/nsfw'),
+		rpNsfw: require('./Menus/rpNsfw'),
+		stats: require('./Menus/stats'),
+		music: require('./Menus/music')
     }
 }
