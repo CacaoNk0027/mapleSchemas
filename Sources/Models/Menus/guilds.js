@@ -54,7 +54,7 @@ module.exports = {
         anuncios = guild.channels.cache.filter(ch => ch.type == "GUILD_NEWS").size
         escenarios = guild.channels.cache.filter(ch => ch.type == "GUILD_STAGE_VOICE").size
         hilos = guild.channels.cache.filter(ch => ch.type == "GUILD_NEWS_THREAD").size + guild.channels.cache.filter(ch => ch.type == "GUILD_PRIVATE_THREAD").size + guild.channels.cache.filter(ch => ch.type == "GUILD_PUBLIC_THREAD").size
-        moderador = member.permissionsIn(guild.publicUpdatesChannelId).has('VIEW_CHANNEL') ? `<:Dis_bg_hypesquad:888237819003273299> **Canal de Actualizaciones de Comunidad |** <#${guild.publicUpdatesChannelId}>\n-ID: ${guild.publicUpdatesChannelId}` : ""
+        moderador = guild.channels.cache.get(guild.publicUpdatesChannelId).permissionsFor(member.user.id).has('VIEW_CHANNEL') ? `<:Dis_bg_hypesquad:888237819003273299> **Canal de Actualizaciones de Comunidad |** <#${guild.publicUpdatesChannelId}>\n-ID: ${guild.publicUpdatesChannelId}` : ""
         return `<:Dis_channelRules:888231318876487731> **Canal de reglas |** ${rules}\n<:Dis_channelAds:888230970266906624> **Canales de auncios |** ${anuncios}\n<:Dis_channelStage:888230718780633108> **Escenarios |** ${escenarios}\n<:Dis_channelThread:888230841942151171> **Hilos activos |** ${hilos}\n${moderador}`
     }
 }
